@@ -1,0 +1,46 @@
+/* CUSTOM CSS */
+* {
+	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+	-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+	-webkit-user-select: none;                 /* prevent copy paste, to allow, change 'none' to 'text' */
+
+}
+.hoofdstukContainer h1{
+	font-size: 20px;
+	margin: 0px;
+	color: #8ABF57;
+}
+.hoofdstukContainer h2{
+	margin: 0px;
+	color: #5B5858;
+	font-style:italic;
+	font-weight: normal;
+	text-shadow:none;
+	font-size: 15px;
+}
+.hoofdstukIcoon, .tekstIcoon{
+	position:relative;
+	float:left;
+	width: 15%;
+}
+.hoofdstukTekst, .tekstTekst{
+	position:relative;
+	float:left;
+	padding:0 5%;
+	text-shadow:none;
+	width: 75%;
+	padding-top:5px;
+}
+.hoofdstukTekst strong, .tekstTekst strong{
+	color: #41A6E0;
+	text-shadow:none;
+}
+.tekstTekst iframe{
+	width: 220px;
+	max-width: 100%;
+}
+.clear{
+	clear:both;
+	height: 20px;
+}
