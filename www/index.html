@@ -332,11 +332,82 @@ wie onverstandig is, gaat eraan voorbij en wordt gestraft (moet de gevolgen drag
                     <img src="images/iconen/filmpje.jpg" border="0" width="100%" /></div>
                 <div class="tekstTekst">
                     <strong>Filmpje(s)</strong><br />
-                    <iframe src="http://www.youtube.com/embed/54I4Pd7M5Ds?modestbranding=1&showinfo=0&fs=0" frameborder="0" allowfullscreen>
-                    </iframe>
+ <div id="player"></div>
+
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: '54I4Pd7M5Ds',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>                    
+
 					<br />
-                    <iframe src="http://www.youtube.com/embed/XXtZN2CxhYE?modestbranding=1&showinfo=0&fs=0" frameborder="0" allowfullscreen>
-                    </iframe>
+ <div id="player2"></div>
+
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player2', {
+          height: '390',
+          width: '640',
+          videoId: 'XXtZN2CxhYE',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>                    
                 </div>
             </div>
             <div class="clear">
@@ -397,8 +468,43 @@ wie onverstandig is, gaat eraan voorbij en wordt gestraft (moet de gevolgen drag
                     <img src="images/iconen/filmpje.jpg" border="0" width="100%" /></div>
                 <div class="tekstTekst">
                     <strong>Filmpje(s)</strong><br />
-                    <iframe src="http://www.youtube.com/embed/JizFAhEpiEc?modestbranding=1&showinfo=0&fs=0" frameborder="0" allowfullscreen>
-                    </iframe>
+                     <div id="player"></div>
+
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'JizFAhEpiEc',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>       
                 </div>
             </div>
             <div class="clear">
@@ -460,8 +566,43 @@ wie onverstandig is, gaat eraan voorbij en wordt gestraft (moet de gevolgen drag
                     <img src="images/iconen/filmpje.jpg" border="0" width="100%" /></div>
                 <div class="tekstTekst">
                     <strong>Filmpje(s)</strong><br />
-                    <iframe src="http://www.youtube.com/embed/uQWfgQz0Tm0?modestbranding=1&showinfo=0&fs=0" frameborder="0" allowfullscreen>
-                    </iframe>
+                     <div id="player"></div>
+
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'uQWfgQz0Tm0',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>    
                 </div>
             </div>
             <div class="clear">
@@ -522,8 +663,43 @@ wie onverstandig is, gaat eraan voorbij en wordt gestraft (moet de gevolgen drag
                     <img src="images/iconen/filmpje.jpg" border="0" width="100%" /></div>
                 <div class="tekstTekst">
                     <strong>Filmpje(s)</strong><br />
-                    <iframe src="http://www.youtube.com/embed/g5U2zWcz7n8?modestbranding=1&showinfo=0&fs=0" frameborder="0" allowfullscreen>
-                    </iframe>
+ <div id="player"></div>
+
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'g5U2zWcz7n8',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>    
                 </div>
             </div>
             <div class="clear">
@@ -645,11 +821,81 @@ wie onverstandig is, gaat eraan voorbij en wordt gestraft (moet de gevolgen drag
                     <img src="images/iconen/filmpje.jpg" border="0" width="100%" /></div>
                 <div class="tekstTekst">
                     <strong>Filmpje(s)</strong><br />
-                    <iframe src="http://www.youtube.com/embed/ujZ9VBrs7CM?modestbranding=1&showinfo=0&fs=0" frameborder="0" allowfullscreen>
-                    </iframe>
-					<br />
-                    <iframe src="http://www.youtube.com/embed/ZYIye7U8V-o?modestbranding=1&showinfo=0&fs=0" frameborder="0" allowfullscreen>
-                    </iframe>
+ <div id="player"></div>
+
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'ujZ9VBrs7CM',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>    
+<br>
+<div id="player2"></div>
+
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player2', {
+          height: '390',
+          width: '640',
+          videoId: 'ZYIye7U8V-o',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>    
                 </div>
             </div>
             <div class="clear">
