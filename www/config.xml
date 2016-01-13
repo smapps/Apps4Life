@@ -40,6 +40,22 @@
 	<gap:splash gap:platform="ios" height="1136" src="./images/screen-iphone-portrait-2xH.png" width="640" />
 	<gap:splash gap:platform="ios" height="1024" src="./images/screen-ipad-portrait.png" width="768" />
 	
+
+	<access origin="*" />
+	<allow-intent href="http://*/*" />
+	<allow-intent href="https://*/*" />
+	<allow-intent href="tel:*" />
+	<allow-intent href="sms:*" />
+	<allow-intent href="mailto:*" />
+	<allow-intent href="geo:*" />
+	<platform name="android">
+	<allow-intent href="market:*" />
+	</platform>
+	<platform name="ios">
+	<allow-intent href="itms:*" />
+	<allow-intent href="itms-apps:*" />
+	</platform>
+	
    <author href="http://www.smapps.nl" email="info@smapps.nl">
         SMAPPS V.O.F. | S.W. Verploeg and M.Haagen
     </author>
