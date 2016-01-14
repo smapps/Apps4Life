@@ -40,6 +40,7 @@
 	<gap:splash gap:platform="ios" height="1136" src="./images/screen-iphone-portrait-2xH.png" width="640" />
 	<gap:splash gap:platform="ios" height="1024" src="./images/screen-ipad-portrait.png" width="768" />
 	
+<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 
 	<access origin="*" />
 	<allow-intent href="http://*/*" />
