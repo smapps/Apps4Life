@@ -8,11 +8,17 @@
 	
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
     <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-    <script type="text/javascript" src="cordova.js"></script> 
     <link rel="stylesheet" href="themes/app4life.min.css" />
     <link rel="stylesheet" href="themes/add.css" />
 	 
     <script src="themes/jq.js"></script>
+	<script>
+	    $(document).bind('mobileinit',function(){
+	        $.mobile.changePage.defaults.changeHash = false;
+	        $.mobile.hashListeningEnabled = false;
+	        $.mobile.pushStateEnabled = false;
+	    });
+	</script> 
     <script src="themes/jqm.js"></script>
 	<script>
 	function onDeviceReady() {
@@ -181,7 +187,7 @@
                     <img src="images/iconen/bijbel.jpg" border="0" width="100%" /></div>
                 <div class="tekstTekst">
                     <strong>Fundamentje</strong><br />
-                    <i>“Waarheid die niet wordt toegepast is als verf in een blik.”</i>
+                    <i>â€œWaarheid die niet wordt toegepast is als verf in een blik.â€</i>
                 </div>
             </div>
             <div class="clear">
@@ -315,8 +321,8 @@ wie onverstandig is, gaat eraan voorbij en wordt gestraft (moet de gevolgen drag
                     <img src="images/iconen/fundament.jpg" border="0" width="100%" /></div>
                 <div class="tekstTekst">
                     <strong>Bijbeltekst</strong><br />
-                    2 Korintiërs 5:17<br />
-                    <i>Daarom ook is iemand die één met Christus is, een nieuwe schepping. Het oude is voorbij, het nieuwe is gekomen.</i>
+                    2 KorintiÃ«rs 5:17<br />
+                    <i>Daarom ook is iemand die Ã©Ã©n met Christus is, een nieuwe schepping. Het oude is voorbij, het nieuwe is gekomen.</i>
                 </div>
             </div>
         </div>
@@ -715,7 +721,7 @@ wie onverstandig is, gaat eraan voorbij en wordt gestraft (moet de gevolgen drag
         </div>
         <div data-role="content">
 		<h1>Over Apps 4 Life</h1>
-		<p>Apps 4 Life is een interactieve prikkelende lesserie over allerlei thema’s waar jongeren in het dagelijks leven mee te maken hebben. De bijbel staat vol met ‘apps 4 life’, toepassingen voor het leven. Maar net als met een app op je telefoon heb je er niets aan, tenzij je er iets mee doet. Toepassen maakt het verschil!</p>
+		<p>Apps 4 Life is een interactieve prikkelende lesserie over allerlei themaâ€™s waar jongeren in het dagelijks leven mee te maken hebben. De bijbel staat vol met â€˜apps 4 lifeâ€™, toepassingen voor het leven. Maar net als met een app op je telefoon heb je er niets aan, tenzij je er iets mee doet. Toepassen maakt het verschil!</p>
 		<p>Deze app is een aanvulling op het boek 'Apps 4 Life'. Bestel het boek via www.apps4life.nl</p>
 		<h2>Ontwikkeling: SMAPPS V.O.F.</h2>		
 		<p>Versie: 1.0, &copy; SMAPPS V.O.F. 2014</p>
